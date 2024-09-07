@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,19 +10,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
-    color: white;
+    background-color: white; 
+    color: black; 
 }
 
-header{
+header {
     margin-top: 20px;
     position: fixed;
     top: 0;
@@ -36,29 +36,28 @@ header{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
-    color: #3ccee7d0;
+    color: #7700ffd0;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
-
 
 .menu-icon {
     display: none;
     font-size: 3rem;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
-nav a{
+nav a {
     font-size: 1.8rem;
-    color: white;
+    color: black; 
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -66,13 +65,13 @@ nav a{
 }
 
 nav a:hover, 
-nav a.active{
-    color: #3ccee7d0;
-    border-bottom: 3px solid #3ccee7d0;
+nav a.active {
+    color: #7700ffd0;
+    border-bottom: 3px solid #7700ffd0;
 }
 
-@media(max-width:995px){
-    nav{
+@media(max-width:995px) {
+    nav {
         position: absolute;
         display: none;
         top: 80px;
@@ -83,145 +82,146 @@ nav a.active{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border-left: 3px solid #3ccee7d0;
+        border-left: 3px solid #7700ffd0;
     }
 
-    nav.active{
+    nav.active {
         display: flex;
     }
 
-    nav a{
+    nav a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
 
     nav a:hover,
-    nav a.active{
+    nav a.active {
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: #3ccee7d0;
+        background-color: #7700ffd0;
         color: black;
     }
 
-    /* Exibir o ícone do menu em telas pequenas */
     .menu-icon {
         display: block;
     }
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
+    background-color: white; 
 }
 
-.home .home-content h1{
+.home .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
+    color: black; 
 }
 
-span{
-    color: #3ccee7d0;
+span {
+    color: #7700ffd0;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: black;
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.6rem;
+    color: black; 
 }
 
-.home-img{
+.home-img {
     border-radius: 50%;
 }
 
-.home-img img{
+.home-img img {
     position: relative;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #3ccee7d0;
+    box-shadow: 0 0 25px solid #7700ffd0;
     cursor: pointer;
     transition: 0.2s linear;
 }
 
-.home-img img:hover{
+.home-img img:hover {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.social-icons a{
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #3ccee7d0;
+    border: 0.2rem solid #7700ffd0; 
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #3ccee7d0;
+    color: #7700ffd0;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #3ccee7d0;
-    box-shadow: 0  0 25px #3ccee7d0;
+    background-color: #7700ffd0;
+    box-shadow: 0 0 25px #7700ffd0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: black;
+    background-color: white;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #3ccee7d0;
+    color: #7700ffd0;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #3ccee7d0;
+    border: 2px solid #7700ffd0;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale3d(1.03);
-    background-color: #3ccee7d0;
+    background-color: #7700ffd0;
     color: black;
-    box-shadow: 0 0 25px #3ccee7d0;
+    box-shadow: 0 0 25px #7700ffd0;
 }
 
-.typing-text{
+.typing-text {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
+    color: black; 
 }
 
-.typing-text span{
+.typing-text span {
     position: relative;
 }
-
-
 
 .typing-text span::after {
     content: "";
     display: inline-block;
     width: 3px;
     height: 34px;
-    background-color: #3ccee7d0;
+    background-color: #7700ffd0;
     margin-left: 5px;
     animation: blink 0.8s steps(1) infinite;
     vertical-align: middle;
@@ -233,45 +233,45 @@ span{
     }
 }
 
-@keyframes cursor{
-    to{
-        border-left: 3px solid #3ccee7d0;
+@keyframes cursor {
+    to {
+        border-left: 3px solid #7700ffd0;
     }
 }
 
-@keyframes words{
-    0%, 33%{
+@keyframes words {
+    0%, 33% {
         content: "Back-end Developer";
     }
-    34%, 66%{
+    34%, 66% {
         content: "Mobile Developer";
     }
-    67%, 100%{
+    67%, 100% {
         content: "Rising Mechatronic Engineer";
     }
 }
 
-@media (max-width: 1000px){
-    .home{
+@media (max-width: 1000px) {
+    .home {
         gap: 4rem;
     }
 }
 
-@media(max-width:995px){
-    .home{
+@media(max-width:995px) {
+    .home {
         flex-direction: column;
         margin: 5rem 4rem;
     }
 
-    .home .home-content h3{
+    .home .home-content h3 {
         font-size: 2.5rem;
     }
 
-    .home-content h1{
+    .home-content h1 {
         font-size: 5rem;
     }
 
-    .home-img img{
+    .home-img img {
         width: 70vw;
         margin-top: 4rem;
     }
