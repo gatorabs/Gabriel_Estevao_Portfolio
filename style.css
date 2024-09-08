@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +10,17 @@
     outline: none;
     font-family: 'Poppins', sans-serif;
 }
-
+:root{
+    --color-text: #616161;
+    --color-text-btn: #ffffff;
+    --card1-gradient-color1: #7700ffd0;
+    --card1-gradient-color2: #7700ff65;
+    --card2-gradient-color1: #7700ff8a;
+    --card2-gradient-color2: #7700ffd8;
+    --card3-gradient-color1: #7700ff8a;
+    --card3-gradient-color2: #7700ffd8;
+    
+  }
 section {
     padding: 5rem 9%;
     scroll-behavior: smooth; 
@@ -85,13 +96,128 @@ nav a.active {
 }
 .skills {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 5rem 9%;
+    gap: 20px; 
+    background-color: black; 
+    padding: 5rem 2%; 
+}
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    
 }
 
+.card-wrap {
+    width: 220px;
+    background: #fff;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    color: var(--color-text);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: 220px;
+}
+
+.card-wrap:hover {
+    transform: scale(1.1);
+}
+
+.card-header {
+    height: 200px;
+    width: 100%;
+    background: red;
+    border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+    display: grid;
+    place-items: center;
+}
+
+.card-header i {
+    color: #fff;
+    font-size: 72px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    border: none;
+    border-radius: 100px;
+    padding: 5px 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-header.one {
+    background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+.card-header.two {
+    background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-header.three {
+    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-header.four {
+    background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+.card-btn.one {
+    background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+.card-btn.two {
+    background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-btn.three {
+    background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-btn.four {
+    background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+
+@media (max-width: 768px) {
+    .card-wrap {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .card-wrap {
+        flex: 1 1 100%; 
+    }
+}
 
 
 
@@ -275,6 +401,8 @@ span {
     background-color: black; 
 }
 
+
+
 @keyframes blink {
     50% {
         opacity: 0;
@@ -324,3 +452,6 @@ span {
         margin-top: 4rem;
     }
 }
+
+
+
