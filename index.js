@@ -49,19 +49,28 @@ document.addEventListener("DOMContentLoaded", function() {
     function changeActiveLink() {
         const sections = document.querySelectorAll('section');
         let index = sections.length;
-
+    
         while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
+    
         navLinks.forEach((link) => link.classList.remove('active'));
         navLinks[index].classList.add('active');
-
+    
         
         if (sections[index].id === 'skills') {
             document.body.classList.add('skills-visible');
+            const menuIcon = document.querySelector('.menu-icon i');
+            if (menuIcon) {
+                menuIcon.style.color = "white"; 
+            }
         } else {
             document.body.classList.remove('skills-visible');
+            const menuIcon = document.querySelector('.menu-icon i');
+            if (menuIcon) {
+                menuIcon.style.color = "black"; 
+            }
         }
     }
+    
 
     window.addEventListener('scroll', changeActiveLink);
     changeActiveLink(); 

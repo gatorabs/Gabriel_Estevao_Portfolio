@@ -83,6 +83,19 @@ nav a.active {
 .skills-visible nav a {
     color: white;
 }
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5rem 9%;
+}
+
+
+
+
+
 
 @media(max-width:995px) {
     nav {
@@ -192,6 +205,24 @@ span {
     background-color: #7700ffd0;
     box-shadow: 0 0 25px #7700ffd0;
 }
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icons i {
+    font-size: 5rem; 
+    color: #7700ffd0; 
+    transition: color 0.3s ease; 
+}
+
+.icons i:hover {
+    color: white; 
+}
+
 
 .btn {
     display: inline-block;
