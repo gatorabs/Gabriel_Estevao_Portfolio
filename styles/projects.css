@@ -1,0 +1,125 @@
+.projects {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projects h3 {
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.13;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.projects .projects-card-wrapper {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.projects-card{
+    width: 100%;
+    background-color: white;
+    height: 480px;
+    width: 350px;
+    padding: 40px 30px 40px 30px;
+    box-shadow: 0px 6px 60px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    transition: 0.8s;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.projects-card-icon{
+    width: 90px;
+    height: 90px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 24px;
+}
+
+.projects-card-icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.projects-card-title{
+    font-size: 22px;
+    margin-bottom: 32x;
+    line-height: 1.63;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.projects-card-description{
+    text-transform: none;
+    font-size: 14px;
+    color: #737373;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.projects-card-wrapper button{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.projects-card:hover {
+    background-color: #8c2bfb;
+    color: #fff;
+    transform: translateY(-16px);
+}
+
+.projects-card:hover p:not(.projects-card-labels p),
+.projects-card:hover .projects-card-title,
+.projects-card:hover button,
+.projects-card:hover .projects-card-svg {
+    color: #fff;
+    stroke: #fff;
+}
+
+.projects-card button {
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.projects-card-svg {
+    vertical-align: middle;
+}
+
+.projects-card-labels {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.projects-card-labels p {
+    background: #fefeff;
+    border-radius: 8px;
+    padding: 6px 8px;
+    color: var(--primary-color);
+    display: inline;
+    font-size: 14px;
+}
